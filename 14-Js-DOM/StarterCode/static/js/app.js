@@ -3,6 +3,35 @@ var tableData = data;
 
 // YOUR CODE HERE!
 var submit = d3.select("#filter-btn");
+//var clear = document.querySelector("#reset-btn");
+
+var clear = d3.select("#reset-btn");
+
+
+clear.on("click", function() {
+  // Prevent the page from refreshing
+  d3.event.preventDefault();
+
+  console.log("inside punciton");
+
+  //var tbody = d3.select("tbody");
+  //var cell = tbody.remove("td");
+  //tbody.innerHTML = "";
+  location.reload();
+  //tbody.reload();
+});
+
+//clear.addEventListener("click", handleResetButtonClick);
+
+//function handleResetButtonClick() {
+//  var tbody = d3.select("tbody");
+//  var cell = tbody.remove("td");
+//  tbody.innerHTML = "";
+//  location.reload();
+//  tbody.reload();
+//}
+
+
 
 submit.on("click", function() {
 
@@ -19,7 +48,7 @@ submit.on("click", function() {
   // that was entered in the form
   d3.select("h1>span").text(inputValue);
 
-  console.log(inputValue + " Blammo");
+  console.log(inputValue + " BlammoH");
 
   
   var filteredData = tableData.filter(Incident => Incident.datetime === inputValue);
@@ -39,6 +68,7 @@ submit.on("click", function() {
     };
 
   var tbody = d3.select("tbody");  
+  
 
   filteredData.forEach(function(UFO_Incident) {
 
@@ -46,7 +76,7 @@ submit.on("click", function() {
       var row = tbody.append("tr");
 
       Object.entries(UFO_Incident).forEach(function([key, value]) {
-        //console.log(key, value);
+        console.log(Object);
         // Append a cell to the row for each value
         // in the weather report object
         var cell = tbody.append("td");
