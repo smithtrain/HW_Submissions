@@ -5,7 +5,7 @@ var tableData = data;
 var submit = d3.select("#filter-btn");
 //var clear = document.querySelector("#reset-btn");
 
-var clear = d3.select("#reset-btn");
+var clear = d3.select("#clear-btn");
 
 
 clear.on("click", function() {
