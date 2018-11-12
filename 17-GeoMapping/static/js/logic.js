@@ -23,7 +23,7 @@ function createFeatures(earthquakeData) {
       fillOpacity: 0.50,
       color: chooseColor(feature.properties.mag),
       fillColor: chooseColor(feature.properties.mag),
-      radius:  feature.properties.mag * 4,
+      radius:  feature.properties.mag * 4.5,
       weight: 1
     });
   }
