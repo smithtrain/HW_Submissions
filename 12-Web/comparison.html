@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Weather vs Latitude</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+        <a class="navbar-brand" href="index.html">Summary</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Visualizations <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="lat_temps.html">Temperature vs Latitude</a></li>
+              <li><a href="lat_humid.html">Humidty vs Latitude</a></li>
+              <li><a href="lat_cloud.html">Cloud Cover vs Latitude</a></li>
+              <li><a href="lat_wind.html">Wind Speed vs Latitude</a></li>
+              <li role="separator" class="divider"></li>
+            </ul>
+          </li>
+          <li><a href="comparison.html">Comparison</a></li>
+          <li><a href="data.htm">Data</a></li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+
+  <!-- Creates the Overall Grid -->
+  <div class="container">
+
+    <h1>Comparisons: All four factors versus Latitude </h1> <br>
+
+    <!-- First Row -->
+    <div class="row">
+
+        <div class="col-md-6 pad top"> <br>
+          <div class="pull-left">
+            <h3>Temperature vs Latitude</h3>
+            <a target="_blank" href="Resources/Current Temperature vs Latitude.png"><img src="Resources/Current Temperature vs Latitude.png" alt="Current Temperature vs. Latitude" width="100%" height="100%"></a>
+          </div>
+
+        </div>
+
+        <div class="col-md-6 pad top"> <br>
+
+          <div class="pull-left">
+            <h3>Relative Humidty vs Latitude</h3>
+            <a target="_blank" href="Resources/Current Relative Humidity vs Latitude.png"><img src="Resources/Current Relative Humidity vs Latitude.png" alt="Current Relative Humidity vs Latitude" width="100%" height="100%"></a>
+          </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 pad top"> <br>
+          <div class="pull-left">
+            <h3>Cloud Cover vs Latitude</h3>
+            <a target="_blank" href="Resources/Current Cloud Cover vs Latitude.png"><img src="Resources/Current Cloud Cover vs Latitude.png" alt="Current Cloud Cover vs Latitude" width="100%" height="100%"></a>
+          </div>
+        </div>
+        <div class="col-md-6 pad top"> <br>
+          <div class="pull-left">
+            <h3>Wind Speed vs Latitude</h3>
+            <a target="_blank" href="Resources/Current Wind Speed vs Latitude.png"><img src="Resources/Current Wind Speed vs Latitude.png" alt="Current Wind Speed vs Latitude" width="100%" height="100%"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</html>

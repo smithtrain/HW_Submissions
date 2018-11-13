@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Page title and style sheet calls-->
+<head>
+  <meta charset="UTF-8">
+  <title>Temperature</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Navigation Brand and toggle for mobile device display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Mobile navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+        <a class="navbar-brand" href="index.html">Summary</a>
+      </div>
+
+       <!-- Navigation bar links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li><a href="lat_temps.html">Temperature vs Latitude</a></li>
+                <li><a href="lat_humid.html">Humidty vs Latitude</a></li>
+                <li><a href="lat_cloud.html">Cloud Cover vs Latitude</a></li>
+                <li><a href="lat_wind.html">Wind Speed vs Latitude</a></li>
+            </ul>
+          </li>
+          <li><a href="comparison.html">Comparison</a></li>
+          <li><a href="data.htm">Data</a></li>
+           </ul>
+      </div>
+      
+    </div>
+    
+  </nav>
+                <!--Content display-->
+                <div class="content">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-8">
+                                    <div class="box">
+                                        <div class="page-header">
+                                            <h1 class="title">Latitude's Effect on Temperature</h1>
+                                        </div>
+                                        <div class="box">
+                                                <img src="Resources/Current Temperature vs Latitude.png" alt="Temperature vs Latitude" class="img-responsive" width="75%" height="75%">
+                                                <p>Temperature does in fact drop as one moves further north and south of the equator. Moreover, there is a nonlinear decrease in temperature as distance from the equator increases.</p>  
+                    
+                    
+                                        </div>
+                                    </div>
+                                </div>
+                
+                                <div class="col-sm-12 col-md-4">
+                                    <div class="box">
+                                        <div class="page-header">
+                                            <h1 class="title">Individual Factors</h1>
+                                        </div>
+                                        <div class="box">
+                                        <a href="lat_temps.html"><img src="Resources/Current Temperature vs Latitude.png" alt="Current Temperature vs Latitude" width=280 height="220"></a>
+                                        <a href="lat_humid.html"><img src="Resources/Current Relative Humidity vs Latitude.png" alt="Current Relative Humidity vs Latitude" width="280" height="220"></a>
+                                        <a href="lat_cloud.html"><img src="Resources/Current Cloud Cover vs Latitude.png" alt="Latitude vs. Cloudiness" width="280" height="220"></a>
+                                        <a href="lat_wind.html"><img src="Resources/Current Wind Speed vs Latitude.png" alt="Current Wind Speed vs Latitude" width="280" height="220"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+ 
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  </body>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script> 
+
+
+  </html>
